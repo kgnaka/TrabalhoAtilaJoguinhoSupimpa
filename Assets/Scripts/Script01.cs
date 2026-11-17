@@ -17,7 +17,7 @@ public class Script01 : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
+        rb = GetComponent<Rigidbody2D>();   
         spriteRenderer = GetComponent<SpriteRenderer>();
 
     }
