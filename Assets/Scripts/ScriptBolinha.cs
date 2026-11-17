@@ -31,14 +31,6 @@ public class ScriptBolinha : MonoBehaviour
             //transform.localScale sempre é Vector3, independente do jogo ser 2d
             //ele cresce para cima e para os lados na mesma proporção (velocidadeCrescimento)
         }
-    }
-    void SpawnBola()
-    {
-        float randomX = UnityEngine.Random.Range(minX, maxX); // declarando que o local de nascimento maximo e minimo ficam nas bordas
-        float randomY = UnityEngine.Random.Range(minY, maxY); // Igual ao de cima, porém limitando que o random de y não existe, no caso, fica limitado a um lugar
-
-        Vector3 posicaoAleatoria = new Vector3(randomX, randomY, 0f); // declarando que num vetor de duas linha, vai spawnar a bola, sendo que será limitado a randomX e randomY e declarando que o vetorZ não existe
-
-        Instantiate(bola, posicaoAleatoria, Quaternion.identity); // instanciando o que vai ser criado (no nosso caso, definindo copias da bola), onde irá ser criado (vector3 criado a cima) e definindo que o objeto não tera rotação
+        
     }
 }
