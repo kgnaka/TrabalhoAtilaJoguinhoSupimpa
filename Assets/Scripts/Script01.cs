@@ -77,7 +77,7 @@ public class Script01 : MonoBehaviour
             estaNoChao = true;
         }
 
-        if (collision.gameObject.CompareTag("Bola")) //se o gato encostar na bolinha
+        if (collision.gameObject.CompareTag("Bola") || collision.gameObject.GetComponent<ScriptMisseis>() != null) //se o gato encostar na bolinha ou no missil
         {
 
             texto.text = "você perdeu >:p";
